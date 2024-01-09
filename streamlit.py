@@ -16,7 +16,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import IsolationForest
 from sklearn import tree
 from pandas.api.types import is_numeric_dtype
-import time
+import tim
 import pickle
 from matplotlib import pyplot as plt
 
