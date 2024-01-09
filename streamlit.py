@@ -14,13 +14,11 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import IsolationForest
-import pyodbc
 from sklearn import tree
 from pandas.api.types import is_numeric_dtype
 import time
 import pickle
-import xlsxwriter
-from io import BytesIO
+
 
 
 def main():
