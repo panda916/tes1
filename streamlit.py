@@ -18,7 +18,7 @@ from sklearn import tree
 from pandas.api.types import is_numeric_dtype
 import time
 import pickle
-
+from matplotlib import pyplot as plt
 
 
 def main():
