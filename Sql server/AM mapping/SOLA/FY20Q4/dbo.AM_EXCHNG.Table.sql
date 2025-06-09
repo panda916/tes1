@@ -1,0 +1,32 @@
+USE [DIVA_SOLA_FY20Q4_INCREMENTAL]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[AM_EXCHNG](
+	[EXCHNG_FROM] [varchar](3) NOT NULL,
+	[EXCHNG_TO] [nvarchar](3) NOT NULL,
+	[EXCHNG_RATIO] [float] NULL,
+	[EXCHNG_SOURCE] [nvarchar](max) NULL,
+ CONSTRAINT [PK_AM_EXCHANGE] PRIMARY KEY CLUSTERED 
+(
+	[EXCHNG_FROM] ASC,
+	[EXCHNG_TO] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'ARS', N'USD', 0.010749488, N'https://xe.com/currencyconverter/convert/?Amount=1&From=ARS&To=USD')
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'BOB', N'USD', 0.14497006, N'https://xe.com/currencyconverter/convert/?Amount=1&From=BOB&To=USD')
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'BRL', N'USD', 0.18191612, N'https://xe.com/currencyconverter/convert/?Amount=1&From=BRL&To=USD')
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'CLP', N'USD', 0.0014132771, N'https://xe.com/currencyconverter/convert/?Amount=1&From=CLP&To=USD')
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'COP', N'USD', 0.00027503864, N'https://xe.com/currencyconverter/convert/?Amount=1&From=COP&To=USD')
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'ECS', N'USD', 4E-05, NULL)
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'EUR', N'USD', 1.2011564, N'https://xe.com/currencyconverter/convert/?Amount=1&From=EUR&To=USD')
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'JPY', N'USD', 0.0092478065, N'https://xe.com/currencyconverter/convert/?Amount=1&From=JPY&To=USD')
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'MXN', N'USD', 0.050329214, N'https://xe.com/currencyconverter/convert/?Amount=1&From=MXN&To=USD')
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'PAB', N'USD', 1, N'https://xe.com/currencyconverter/convert/?Amount=1&From=PAB&To=USD')
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'PEN', N'USD', 0.26528912, N'https://xe.com/currencyconverter/convert/?Amount=1&From=PEN&To=USD')
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'USD', N'USD', 1, NULL)
+INSERT [dbo].[AM_EXCHNG] ([EXCHNG_FROM], [EXCHNG_TO], [EXCHNG_RATIO], [EXCHNG_SOURCE]) VALUES (N'UYU', N'USD', 0.022626677, N'https://xe.com/currencyconverter/convert/?Amount=1&From=UYU&To=USD')
+GO
